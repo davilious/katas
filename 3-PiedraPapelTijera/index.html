@@ -1,0 +1,17 @@
+<html>
+<head>
+	<title>Piedra, papel, tijera</title>
+	<script type="text/javascript" src="PiedraPapelTijera.js"></script>
+</head>
+<body>
+<button class="js-play">Go</button><button class="js-reset">Reset</button>
+<div id="console"></div>
+<script>
+	var button = document.getElementsByClassName('js-play')[0];
+	var reset = document.getElementsByClassName('js-reset')[0];
+	var tirada = papelPiedraTijera('papel','console');
+	button.addEventListener('click', function(){ tirada.init() } );
+	reset.addEventListener('click', function(){ tirada.reset() } );
+</script>
+</body>
+</html>
