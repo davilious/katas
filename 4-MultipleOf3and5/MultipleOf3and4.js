@@ -1,4 +1,4 @@
-
+// http://projecteuler.net/problem=1
 var sumMultipleof3and5 = (function(){
 	var numA = 3, 
 	    numB = 5, 
